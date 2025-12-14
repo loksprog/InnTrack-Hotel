@@ -1,0 +1,469 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+*::-webkit-scrollbar {
+  width: 0.4rem;
+}
+*::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+*::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Navigation */
+nav {
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 200;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #334155;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+ul li a:hover {
+  color: #667eea;
+}
+
+ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transition: width 0.3s ease;
+}
+
+ul li a:hover::after {
+  width: 100%;
+}
+
+.logo p {
+  font-size: 28px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%) !important;
+  border: none !important;
+  padding: 10px 25px !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn-danger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(239, 68, 68, 0.4);
+}
+
+/* First Section - Hero */
+#firstsection {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+#firstsection .carousel-inner {
+  width: 100%;
+  height: 100vh;
+}
+
+#firstsection .carousel-inner::after {
+  content: "";
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.6),
+    rgba(118, 75, 162, 0.6)
+  );
+  z-index: 1;
+}
+
+#firstsection .carousel-item img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+#firstsection .welcomeline {
+  position: absolute;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+#firstsection .welcometag {
+  font-size: 72px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+  line-height: 1.2;
+  padding: 0 20px;
+}
+
+/* Guest Detail Panel */
+#guestdetailpanel {
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10000;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+#guestdetailpanel .middle {
+  height: 450px;
+  overflow-y: auto;
+}
+
+/* Second Section - Rooms */
+#secondsection {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  padding: 100px 0 80px 0;
+  position: relative;
+}
+
+#secondsection img {
+  display: none;
+}
+
+.ourroom {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.head {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 42px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.roomselect {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.roomselect .roombox {
+  width: 100%;
+  max-width: 320px;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.roomselect .roombox:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgba(102, 126, 234, 0.2);
+}
+
+.hotelphoto {
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.h1 {
+  background-image: url(../image/hotel1photo.webp);
+}
+.h2 {
+  background-image: url(../image/hotel2photo.jpg);
+}
+.h3 {
+  background-image: url(../image/hotel3photo.avif);
+}
+.h4 {
+  background-image: url(../image/hotel4photo.jpg);
+}
+
+.roomdata {
+  padding: 25px;
+  text-align: center;
+}
+
+.roomdata h2 {
+  color: #1e293b;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.services i {
+  color: #667eea;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.services i:hover {
+  transform: scale(1.2);
+  color: #764ba2;
+}
+
+.bookbtn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  border: none !important;
+  padding: 12px 30px !important;
+  border-radius: 10px !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+  width: 100%;
+}
+
+.bookbtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Third Section - Facilities */
+#thirdsection {
+  min-height: 90vh;
+  padding: 80px 40px;
+  background: white;
+}
+
+.facility {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.facility .box {
+  height: 300px;
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.facility .box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  transition: all 0.3s ease;
+}
+
+.facility .box:hover::before {
+  background: linear-gradient(
+    to top,
+    rgba(102, 126, 234, 0.8),
+    rgba(118, 75, 162, 0.6)
+  );
+}
+
+.facility .box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.facility .box h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.box:nth-child(1) {
+  background-image: url(../image/swimingpool.jpg);
+}
+.box:nth-child(2) {
+  background-image: url(../image/spa.jpg);
+}
+.box:nth-child(3) {
+  background-image: url(../image/food.jpg);
+}
+.box:nth-child(4) {
+  background-image: url(../image/gym.jpg);
+}
+.box:nth-child(5) {
+  background-image: url(../image/heli.jpg);
+}
+
+/* Contact Section */
+#contactus {
+  height: 80px;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+}
+
+#contactus .social {
+  display: flex;
+  gap: 25px;
+}
+
+#contactus i {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#contactus i:hover {
+  color: #667eea;
+  transform: translateY(-3px);
+}
+
+#contactus .createdby h5 {
+  color: #94a3b8;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    justify-content: center;
+    padding: 0 20px;
+    background: rgba(255, 255, 255, 0.98);
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  #firstsection {
+    height: 60vh;
+  }
+
+  #firstsection .carousel-inner,
+  #firstsection .carousel-inner::after,
+  #firstsection .carousel-item img,
+  #firstsection .welcomeline {
+    height: 60vh;
+  }
+
+  #firstsection .welcometag {
+    font-size: 36px;
+    padding: 0 20px;
+  }
+
+  #secondsection {
+    padding: 60px 20px;
+  }
+
+  .head {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .roomselect {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  #thirdsection {
+    padding: 60px 20px;
+  }
+
+  .facility {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .facility .box {
+    height: 200px;
+  }
+
+  .facility .box h2 {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .box:nth-child(5) {
+    display: none;
+  }
+
+  #contactus {
+    padding: 0 20px;
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+    padding: 20px;
+  }
+}
