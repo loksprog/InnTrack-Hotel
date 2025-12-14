@@ -42,7 +42,7 @@ if($usermail == true){
             <p>InnTrack</p>
         </div>
         <div class="logout">
-        <a href="../logout.php"><button class="btn btn-primary">Logout</button></a>
+        <a href="../logout.php"><button class="btn btn-primary">Log out</button></a>
         </div>
     </nav>
     <nav class="sidenav">
