@@ -25,10 +25,10 @@ include '../config.php';
             <label for="troom">Type of Room :</label>
             <select name="troom" class="form-control">
                 <option value selected></option>
-                <option value="Superior Room">SUPERIOR ROOM</option>
-                <option value="Deluxe Room">DELUXE ROOM</option>
-                <option value="Guest House">GUEST HOUSE</option>
-                <option value="Single Room">SINGLE ROOM</option>
+                <option value="Superior Room">Superior Room</option>
+                <option value="Deluxe Room">Deluxe Room</option>
+                <option value="Guest House">Guest House</option>
+                <option value="Single Room">Single Room</option>
             </select>
 
             <label for="bed">Type of Bed :</label>
