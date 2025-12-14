@@ -40,8 +40,8 @@
                     <th scope="col">Name</th>
                     <th scope="col">Room Type</th>
                     <th scope="col">Bed Type</th>
-                    <th scope="col">Check In</th>
-                    <th scope="col">Check In</th>
+                    <th scope="col">Check-in</th>
+                    <th scope="col">Check-out</th>
 					<th scope="col">No of Day</th>
                     <th scope="col">No of Room</th>
 					<th scope="col">Meal Type</th>
