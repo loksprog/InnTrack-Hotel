@@ -190,10 +190,10 @@ if (isset($_POST['guestdetailedit'])) {
                     <h4>Reservation information</h4>
                     <select name="RoomType" class="selectinput">
 						<option value selected >Type Of Room</option>
-                        <option value="Superior Room">SUPERIOR ROOM</option>
-                        <option value="Deluxe Room">DELUXE ROOM</option>
-						<option value="Guest House">GUEST HOUSE</option>
-						<option value="Single Room">SINGLE ROOM</option>
+                        <option value="Superior Room">Superior Room</option>
+                        <option value="Deluxe Room">Deluxe Room</option>
+						<option value="Guest House">Guest House</option>
+						<option value="Single Room">Single Room</option>
                     </select>
                     <select name="Bed" class="selectinput">
 						<option value selected >Bedding Type</option>
@@ -218,11 +218,11 @@ if (isset($_POST['guestdetailedit'])) {
 					</select>
                     <div class="datesection">
                         <span>
-                            <label for="cin"> Check-In</label>
+                            <label for="cin"> Check-in</label>
                             <input name="cin" type ="date" value="<?php echo $cin ?>">
                         </span>
                         <span>
-                            <label for="cin"> Check-Out</label>
+                            <label for="cin"> Check-out</label>
                             <input name="cout" type ="date" value="<?php echo $cout ?>">
                         </span>
                     </div>
