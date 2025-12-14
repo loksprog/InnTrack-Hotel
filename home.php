@@ -78,12 +78,12 @@ if($usermail == true){
       <div id="guestdetailpanel">
         <form action="" method="POST" class="guestdetailpanelform">
             <div class="head">
-                <h3>RESERVATION</h3>
+                <h3>Reservation</h3>
                 <i class="fa-solid fa-circle-xmark" onclick="closebox()"></i>
             </div>
             <div class="middle">
                 <div class="guestinfo">
-                    <h4>Guest information</h4>
+                    <h4>Guest Information</h4>
                     <input type="text" name="Name" placeholder="Enter Full name">
                     <input type="email" name="Email" placeholder="Enter Email">
 
@@ -106,13 +106,13 @@ if($usermail == true){
                 <div class="line"></div>
 
                 <div class="reservationinfo">
-                    <h4>Reservation information</h4>
+                    <h4>Reservation Information</h4>
                     <select name="RoomType" class="selectinput">
 						<option value selected >Type Of Room</option>
-                        <option value="Superior Room">SUPERIOR ROOM</option>
-                        <option value="Deluxe Room">DELUXE ROOM</option>
-						<option value="Guest House">GUEST HOUSE</option>
-						<option value="Single Room">SINGLE ROOM</option>
+                        <option value="Superior Room">Superior Room</option>
+                        <option value="Deluxe Room">Delux Room</option>
+						<option value="Guest House">Guest House</option>
+						<option value="Single Room">Single Room</option>
                     </select>
                     <select name="Bed" class="selectinput">
 						<option value selected >Bedding Type</option>
@@ -203,7 +203,7 @@ if($usermail == true){
   <section id="secondsection"> 
     <img src="./image/homeanimatebg.svg">
     <div class="ourroom">
-      <h1 class="head">Our room</h1>
+      <h1 class="head">Our Room</h1>
       <div class="roomselect">
         <div class="roombox">
           <div class="hotelphoto h1"></div>
@@ -222,7 +222,7 @@ if($usermail == true){
         <div class="roombox">
           <div class="hotelphoto h2"></div>
           <div class="roomdata">
-            <h2>Delux Room</h2>
+            <h2>Deluxe Room</h2>
             <div class="services">
               <i class="fa-solid fa-wifi"></i>
               <i class="fa-solid fa-burger"></i>
@@ -275,7 +275,7 @@ if($usermail == true){
         <h2>24/7 Gym</h2>
       </div>
       <div class="box">
-        <h2>Heli service</h2>
+        <h2>Heli Service</h2>
       </div>
     </div>
   </section>
